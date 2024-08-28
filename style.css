@@ -4,84 +4,85 @@
 
 /* para usar los título utilizo: # */
 #titulo {
-    color: red;
+  color: red;
 }
 
 /* para usar las clases utilizo: . */
 p.texto {
-    color: green;
+  color: green;
 }
 
 /* El orden es importante en CSS */
 p.especial {
-    color: blue
+  color: blue;
 }
 
 /* Para seleccionar dentro de un div, simple */
 div p {
-    color : aquamarine;
+  color: aquamarine;
 }
 
 /* Para seleccionar dentro de un div, multiple*/
-div h2, div h3 {
-    color : brown;
+div h2,
+div h3 {
+  color: brown;
 }
 
 /* Seleccionar todo: Selector universal (* {})
 /* Aqui no se superpone, solo si no se ha definido*/
 
 /* * { */
-    /* font-size: 24px; */
-    /* color: orange;  */
+/* font-size: 24px; */
+/* color: orange;  */
 /* } */
 
 /* Seleccion de colores: 3 maneras */
 /* Bordes */
 .color {
-    /* color: #222; */ /* Formato hexagesimal RGB*/
-    /* color: #FFAAEE; */ /* Formato hexagesimal RRGGBB*/
-    /* color: rgb(0, 255, 255) */ /* Formato RGB 0-255*/
-    /* border: 5px black outset; */ /* ctrl + espacio para ver opciones */
-    border-radius: 20px;
-    border-style: solid;
-    border-color: blueviolet;
-    border-width: 2rem;  /*2em 5px 1pt 5pc 1mm*/ 
-    /* em: relativo al tamaño de la fuente actual */
-    /* relativo al tamaño de la fuente raiz */
+  /* color: #222; */ /* Formato hexagesimal RGB*/
+  /* color: #FFAAEE; */ /* Formato hexagesimal RRGGBB*/
+  /* color: rgb(0, 255, 255) */ /* Formato RGB 0-255*/
+  /* border: 5px black outset; */ /* ctrl + espacio para ver opciones */
+  border-radius: 20px;
+  border-style: solid;
+  border-color: blueviolet;
+  border-width: 2rem; /*2em 5px 1pt 5pc 1mm*/
+  /* em: relativo al tamaño de la fuente actual */
+  /* relativo al tamaño de la fuente raiz */
 }
 
 #fondo {
-    /* background-color: rgba(255,0,0,0.5); */ /* Color, transparencia */
-    /* opacity: 0.99; */ /* Transparencia del objeto */
-    height: 200px;
-    background: #F00 url('mama.JPG') no-repeat center top / 200px 100px;
-    /* background-image: url('mama.JPG'); */
-    /* background-size: 200px 100px; */ /* auto, cover, contain*/
-    /* background-repeat: no-repeat; */ /* repeat-x, repeat-y */
-    /* background-position: center top; */ /* bottom */
-    /* Recuerda que el orden es importante */
+  /* background-color: rgba(255,0,0,0.5); */ /* Color, transparencia */
+  /* opacity: 0.99; */ /* Transparencia del objeto */
+  height: 200px;
+  background: #f00 url("Kung Fu.JPG") no-repeat center top / 200px 100px;
+  /* background-image: url('mama.JPG'); */
+  /* background-size: 200px 100px; */ /* auto, cover, contain*/
+  /* background-repeat: no-repeat; */ /* repeat-x, repeat-y */
+  /* background-position: center top; */ /* bottom */
+  /* Recuerda que el orden es importante */
 }
 
 .margen {
-    background-color: green;
-    /* BoxModel: Como se posiciona un html */
-    margin: 15px 20px 25px 30px;
-    padding: 30px 25px 20px 15px;
-    border: solid 1px black;
-    height: 100px;
-    width: 50px;
-    overflow: scroll; /* visible, hidden */
-    outline: 1px solid red;
+  background-color: green;
+  /* BoxModel: Como se posiciona un html */
+  margin: 15px 20px 25px 30px;
+  padding: 30px 25px 20px 15px;
+  border: solid 1px black;
+  height: 100px;
+  width: 50px;
+  overflow: scroll; /* visible, hidden */
+  outline: 1px solid red;
 }
 
 .alinear {
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    font-family: "Yarndings 12", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    text-align: justify;
-    text-decoration: overline;
-    text-shadow: 3px 5px 5px blue; /* x, y, difuminado, color */
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: "Yarndings 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  text-decoration: overline;
+  text-shadow: 3px 5px 5px blue; /* x, y, difuminado, color */
 }
 
 /*
@@ -94,115 +95,116 @@ Existen 4 estados en los link
 
 /* Seleccionar cuando el link no ha sido seleccionado */
 a:link {
-    color: blueviolet;
+  color: blueviolet;
 }
 
 a:visited {
-    color: gray;
+  color: gray;
 }
 
 a:hover {
-    color: yellow;
+  color: yellow;
 }
 
 a:active {
-    color: red;
+  color: red;
 }
 
 ul {
-    background-color: cyan;
-    list-style-type: none;
-    /* padding-left: 0; */
-    /* list-style-position: 1; */
+  background-color: cyan;
+  list-style-type: none;
+  /* padding-left: 0; */
+  /* list-style-position: 1; */
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
-th, td {
-    border: solid 1px #eee;
-    padding: 5px;
+th,
+td {
+  border: solid 1px #eee;
+  padding: 5px;
 }
 
 th {
-    background-color: tomato;
-    color: white;
-    text-align: left;
+  background-color: tomato;
+  color: white;
+  text-align: left;
 }
 
 /* Seleccionar solo algunos elementos que queremos */
 tr:nth-child(even) {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 tr:hover {
-    background-color: blue;
-    cursor: pointer;
+  background-color: blue;
+  cursor: pointer;
 }
 
 /* div tiene el display: block por defecto*/
 /* el span no lo tiene, y por eso no hace salto de linea */
 span {
-    display: block;
-    /* display: none; */
-    /* visibility: hidden; */
-    max-width: 300px;
-    background-color: cyan;
+  display: block;
+  /* display: none; */
+  /* visibility: hidden; */
+  max-width: 300px;
+  background-color: cyan;
 }
 /* con display: inline; anulamos el display: block */
 /* anchortans, link e img son los que vienen con inline */
 .inline {
-    /* display: inline; */
-    display: block;
+  /* display: inline; */
+  display: block;
 }
 
 #position {
-    position: sticky; /* relative */ /* fixed: Usa el scroll */
-    left: 20px; 
-    /* top: 25px; */ /* activa esto con sticky y baja el scroll */
+  position: sticky; /* relative */ /* fixed: Usa el scroll */
+  left: 20px;
+  /* top: 25px; */ /* activa esto con sticky y baja el scroll */
 }
 
 .left {
-    float: left;
-    width: 200px;
-    height: 100px;
+  float: left;
+  width: 200px;
+  height: 100px;
 }
 
 .right {
-    float: right;
+  float: right;
 }
 
 .container {
-    height: 120px;
+  height: 120px;
 }
 
 .column {
-    /*
+  /*
     border: solid 1px #ddd;
     border-radius: 5px;
     margin: 0 15px;
     padding: 10px 15px;
     */
 
-    margin: 0;
-    padding: 10px 0;
-    width: 33.3%;
+  margin: 0;
+  padding: 10px 0;
+  width: 33.3%;
 }
 
 .inline-block {
-    /* display: inline-block; */
-    display: inline; /* No se puede asignar el with ni el hight */
-    height: 55px;
-    background-color: #F00;
+  /* display: inline-block; */
+  display: inline; /* No se puede asignar el with ni el hight */
+  height: 55px;
+  background-color: #f00;
 }
 
 /* Centrar un objeto, primero darle un ancho que no sea 100%,
 tendra que ser menor.*/
 .centrar {
-    padding: 20px 0;
-    text-align: center;
-    width: 200px;
-    margin: 0 auto;
-    background-color: blue;
+  padding: 20px 0;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  background-color: blue;
 }
